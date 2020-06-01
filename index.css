@@ -7,32 +7,9 @@
 
 .main {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: white;
-}
-
-.main .left {
-  height: 100vh;
-  width: 300px;
-  border-right: 1px solid #a9a9a9;
-  background-color: #f5f5f5;
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
-}
-
-.main .right {
-  background: url("background.png") center no-repeat;
+  background: url("suisai.png") center no-repeat;
   background-size: cover;
-  height: 100%;
-  width: calc(100% - 300px);
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,10 +21,44 @@
           align-items: center;
 }
 
-.main .right .name {
+.main .top .name {
+  text-align: center;
   font-size: 50px;
-  color: black;
+  color: white;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.main .top .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.main .top .contents .button {
+  border: none;
+  margin: 50px 50px;
+  font-size: 20px;
+  cursor: default;
+}
+
+.profile {
+  height: 100vh;
+  border-top: 1px solid black;
+  padding: 200px 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .mine {
+  height: 40%;
 }
 /*# sourceMappingURL=index.css.map */
