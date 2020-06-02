@@ -52,13 +52,67 @@
 .profile {
   height: 100vh;
   border-top: 1px solid black;
-  padding: 200px 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .profile .mine {
-  height: 40%;
+  height: 30%;
+}
+
+.profile .introduction {
+  margin-left: 50px;
+}
+
+.profile .introduction .skill {
+  margin-top: 20px;
+  border: 2px solid black;
+  padding: 10px 20px 20px;
+}
+
+.profile .introduction .skill .item {
+  font-weight: bold;
+}
+
+.profile .introduction .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.profile .introduction .links .link {
+  color: black;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+.app {
+  height: 100vh;
+  border-top: 1px solid black;
+}
+
+.contact {
+  height: 100vh;
+  border-top: 1px solid black;
+}
+
+.showbtns {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+}
+
+.showbtns .showbtn {
+  margin-bottom: 40px;
+  cursor: default;
 }
 /*# sourceMappingURL=index.css.map */

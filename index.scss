@@ -34,10 +34,48 @@
 .profile {
   height: 100vh;
   border-top: 1px solid black;
-  padding: 200px 300px;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   .mine {
-    height: 40%;
+    height: 30%;
+  }
+  .introduction {
+    margin-left: 50px;
+    .skill {
+      margin-top: 20px;
+      border: 2px solid black;
+      padding: 10px 20px 20px;
+      .item {
+        font-weight: bold;
+      }
+    }
+    .links {
+      display: flex;
+      margin-top: 20px;
+      .link {
+        color: black;
+        padding-right: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+.app {
+  height: 100vh;
+  border-top: 1px solid black;
+}
+.contact {
+  height: 100vh;
+  border-top: 1px solid black;
+}
+.showbtns {
+  display: none;
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  .showbtn {
+    margin-bottom: 40px;
+    cursor: default;
   }
 }
