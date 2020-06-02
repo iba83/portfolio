@@ -64,6 +64,38 @@
 .app {
   height: 100vh;
   border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  .mineApp {
+    text-decoration: none;
+    color: black;
+    width: 25%;
+    margin: 0 10px;
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.4));
+    .pic {
+      width: 100%;
+    }
+    .explanation {
+      background-color: #f4f4f4;
+      text-align: center;
+      font-size: 11px;
+      height: 180px;
+      padding-top: 6px;
+      .appname {
+        font-weight: bold;
+        font-size: 12px;
+        display: block;
+      }
+      .function {
+        text-align: left;
+        width: 50%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
 .contact {
   height: 100vh;
