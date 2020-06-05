@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="profile">
-    <img src="public/mine.png" alt="minepic" class="mine">
+    <img src="mine.png" alt="minepic" class="mine">
     <div class="introduction">
       <p class="career">
         1994年 兵庫県出身 26歳<br>
@@ -67,8 +67,8 @@
     </div>
   </div>
   <div class="app">
-    <a href="https://freetime888.herokuapp.com/" class="mineApp">
-      <img src="public/portforiopic.png" alt="freetime" class="pic">
+    <a href="https://portfolio-it.web.app/" class="mineApp">
+      <img src="portforiopic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">ポートフォリオ</span>
         自身のポートフォリオです。<br>
@@ -76,7 +76,7 @@
       </div>
     </a>
     <a href="https://freetime888.herokuapp.com/" class="mineApp">
-      <img src="public/freetimepic.png" alt="freetime" class="pic">
+      <img src="freetimepic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">趣味投稿サイト</span>
         趣味についての記事を投稿・閲覧できるものです。
@@ -93,7 +93,7 @@
       </div>
     </a>
     <a href="https://socialstylechecker.herokuapp.com/" class="mineApp">
-      <img src="public/socialstylepic.png" alt="freetime" class="pic">
+      <img src="socialstylepic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">ソーシャルスタイル診断サイト</span>
         ソーシャルスタイル診断ができるサイトです。
@@ -105,7 +105,7 @@
       </div>
     </a>
     <a href="http://18.178.39.58/users/sign_in" class="mineApp">
-      <img src="public/chatspacepic.png" alt="freetime" class="pic">
+      <img src="chatspacepic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">チャットアプリ</span>
         グループ作成後、メッセージのやり取りが可能です。
@@ -127,7 +127,7 @@
         twitterのDMからご連絡ください。
       </p>
       <a href="https://twitter.com/tomo_8326" class="contactlink">
-        <img src="public/twitter.png" alt="twitter" class="twitterpic">
+        <img src="twitter.png" alt="twitter" class="twitterpic">
         <p>twitter</p>
       </a>  
     </div>
@@ -138,5 +138,28 @@
     <div class="showbtn appscroll">app</div>
     <div class="showbtn contactscroll">contact</div>
   </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDejcPTLvJJjKZll3uUOmlzWOP1YP4dtqU",
+    authDomain: "portfolio-it.firebaseapp.com",
+    databaseURL: "https://portfolio-it.firebaseio.com",
+    projectId: "portfolio-it",
+    storageBucket: "portfolio-it.appspot.com",
+    messagingSenderId: "894281868849",
+    appId: "1:894281868849:web:c970e23b23ed1773721710",
+    measurementId: "G-PRQWB9HJ1M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 </html>
