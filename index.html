@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <title>Iba_Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="jquery-letterfx.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="jquery.ripples-min.js"></script>
+  <script src="tuxsudo.min.js"></script>
+  <script src="jquery-letterfx.min.js"></script>
   <script src="index.js"></script>
 </head>
 <body>
   <div class="main">
     <div class="top">
-      <p class="name">Tomoko Iba - portfolio</p>
+      <p class="name">Tomoko Iba's portfolio</p>
       <div class="contents">
         <p class="button profilebtn">profile</p>
         <p class="button appbtn">app</p>
@@ -22,29 +25,50 @@
     </div>
   </div>
   <div class="profile">
-    <img src="mine.png" alt="minepic" class="mine">
+    <img src="public/mine.png" alt="minepic" class="mine">
     <div class="introduction">
       <p class="career">
         1994年 兵庫県出身 26歳<br>
         服飾専門学校卒業後、アパレルの販売職、商品企画職を経験。<br>
         今年の3月からTECH CHAMPに入学し、プログラミングを学ぶ。
       </p>
-      <p class="skill">
-        <span class="item">スキル</span><br>
-        HTML, CSS, haml, scss<br>
-        Ruby, Ruby on Rails, javascript, jQery <br>
-        MySQL, aws, github, slack
-      </p>
       <div class="links">
         <a href="https://github.com/iba83" class="link github">github</a>
         <a href="https://qiita.com/tomo_8326" class="link qiita">qiita</a>
         <a href="https://twitter.com/tomo_8326" class="link twitter">twitter</a>
       </div>
+      <div class="skill">
+        <div class="type">
+          <p class="front">フロントエンド</p>
+          <p class="back">バックエンド</p>
+          <p class="other">その他</p>
+        </div>
+        <div class="item">
+          <ul class="frontlist">
+            <li>・HTML</li>
+            <li>・CSS</li>
+            <li>・haml</li>
+            <li>・scss</li>
+            <li>・javascript</li>
+            <li>・jQuery</li>
+          </ul>
+          <ul class="backlist">
+            <li>・Ruby</li>
+            <li>・Ruby on Rail</li>
+          </ul>
+          <ul class="otherlist">
+            <li>・MySQL</li>
+            <li>・aws</li>
+            <li>・github</li>
+            <li>・slack</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
   <div class="app">
     <a href="https://freetime888.herokuapp.com/" class="mineApp">
-      <img src="portforiopic.jpg" alt="freetime" class="pic">
+      <img src="public/portforiopic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">ポートフォリオ</span>
         自身のポートフォリオです。<br>
@@ -52,7 +76,7 @@
       </div>
     </a>
     <a href="https://freetime888.herokuapp.com/" class="mineApp">
-      <img src="freetimepic.png" alt="freetime" class="pic">
+      <img src="public/freetimepic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">趣味投稿サイト</span>
         趣味についての記事を投稿・閲覧できるものです。
@@ -69,7 +93,7 @@
       </div>
     </a>
     <a href="https://socialstylechecker.herokuapp.com/" class="mineApp">
-      <img src="socialstylepic.png" alt="freetime" class="pic">
+      <img src="public/socialstylepic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">ソーシャルスタイル診断サイト</span>
         ソーシャルスタイル診断ができるサイトです。
@@ -81,7 +105,7 @@
       </div>
     </a>
     <a href="http://18.178.39.58/users/sign_in" class="mineApp">
-      <img src="chatspacepic.png" alt="freetime" class="pic">
+      <img src="public/chatspacepic.png" alt="freetime" class="pic">
       <div class="explanation">
         <span class="appname">チャットアプリ</span>
         グループ作成後、メッセージのやり取りが可能です。
@@ -95,7 +119,19 @@
       </div>
     </a>
   </div>
-  <div class="contact"></div>
+  <div class="contact">
+    <div class="contactp">
+      <p>最後までご覧いただきありがとうございました。<br>
+        私のことを少しでも知っていただけたのなら嬉しいです。<br>
+        もしこのサイトやわたしについて気になることがございましたら、<br>
+        twitterのDMからご連絡ください。
+      </p>
+      <a href="https://twitter.com/tomo_8326" class="contactlink">
+        <img src="public/twitter.png" alt="twitter" class="twitterpic">
+        <p>twitter</p>
+      </a>  
+    </div>
+  </div>
   <div class="showbtns">
     <div class="showbtn topscroll">top</div>
     <div class="showbtn profscroll">profile</div>

@@ -7,9 +7,6 @@
 
 .main {
   height: 100vh;
-  background: url("suisai.png") center no-repeat;
-  background-size: cover;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +21,7 @@
 .main .top .name {
   text-align: center;
   font-size: 50px;
-  color: white;
+  color: black;
   -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
           filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
@@ -39,7 +36,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: black;
 }
 
 .main .top .contents .button {
@@ -51,7 +48,6 @@
 
 .profile {
   height: 100vh;
-  border-top: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,17 +64,7 @@
 }
 
 .profile .introduction {
-  margin-left: 50px;
-}
-
-.profile .introduction .skill {
-  margin-top: 20px;
-  border: 2px solid black;
-  padding: 10px 20px 20px;
-}
-
-.profile .introduction .skill .item {
-  font-weight: bold;
+  margin-left: 70px;
 }
 
 .profile .introduction .links {
@@ -94,9 +80,49 @@
   font-weight: bold;
 }
 
+.profile .introduction .skill {
+  margin-top: 30px;
+}
+
+.profile .introduction .skill .type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile .introduction .skill .type p {
+  padding: 5px 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  cursor: default;
+}
+
+.profile .introduction .skill .type .front {
+  background-color: #164a84;
+  color: white;
+}
+
+.profile .introduction .skill .type .other {
+  border-right: 2px solid black;
+}
+
+.profile .introduction .skill .item {
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  height: 168px;
+}
+
+.profile .introduction .skill .item .ul li {
+  line-height: 20px;
+}
+
+.profile .introduction .skill .item .backlist, .profile .introduction .skill .item .otherlist {
+  display: none;
+}
+
 .app {
   height: 100vh;
-  border-top: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,8 +142,8 @@
   color: black;
   width: 25%;
   margin: 0 10px;
-  -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
-          filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.4));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .app .mineApp .pic {
@@ -144,9 +170,52 @@
   margin: 0 auto;
 }
 
+.app .mineApp:hover {
+  -webkit-filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(6px 6px 6px rgba(0, 0, 0, 0.4));
+}
+
+.app .mineApp:active {
+  position: relative;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+  top: 6px;
+}
+
 .contact {
   height: 100vh;
-  border-top: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contactp {
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact .contactp .contactlink {
+  color: black;
+  font-weight: bold;
+  padding-top: 20px;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.4));
+}
+
+.contact .contactp .contactlink .twitterpic {
+  height: 120px;
+  margin: 40px 0 10px;
+}
+
+.contact .contactp .contactlink:hover {
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
 }
 
 .showbtns {

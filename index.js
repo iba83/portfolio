@@ -1,11 +1,8 @@
 $(function(){
-  $(".main").ripples({
-    dropRadius: 20,
-    perturbance: 0,
-    resolution: 240,
+  
+  $(".name, .button").letterfx({
+    "fx": "spin"
   });
-
-  $(".top").hide().fadeIn(1500);
 
   var location = $(".profile").offset().top;
   var location2 = $(".app").offset().top;
@@ -78,5 +75,35 @@ $(function(){
   $(".topscroll").on("click", function(){
     $("html, body").animate({scrollTop:0});
   })
+
+  var typebtn = {
+    "background-color":"#164a84",
+    "color":"white"
+  }
+  var resetbtn = {
+    "background-color":"white",
+    "color":"black"
+  }
+
+  $(".front").on("click", function(){
+    $(".front").css(typebtn);
+    $(".back, .other").css(resetbtn);
+    $(".backlist, .otherlist").hide();
+    $(".frontlist").show();
+  });
+
+  $(".back").on("click", function(){
+    $(".back").css(typebtn);
+    $(".front, .other").css(resetbtn);
+    $(".frontlist, .otherlist").hide();
+    $(".backlist").show();
+  });
+
+  $(".other").on("click", function(){
+    $(".other").css(typebtn);
+    $(".front, .back").css(resetbtn);
+    $(".backlist, .frontlist").hide();
+    $(".otherlist").show();
+  });
 
 });
