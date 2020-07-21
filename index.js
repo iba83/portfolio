@@ -6,7 +6,6 @@ $(function(){
 
   var location = $(".profile").offset().top;
   var location2 = $(".app").offset().top;
-  var location3 = $(".contact").offset().top;
   
   var css = {
     'font-weight':'bold',
@@ -28,21 +27,17 @@ $(function(){
     if (wintop >= location){
       $(".showbtns").fadeIn("slow");
       $('.profscroll').css(css);
-      $(".contactscroll").css(cssReset);
       $(".appscroll").css(cssReset);
     } else {
       $(".showbtns").fadeOut("slow");
       $('.profscroll').css(cssReset);
-      $(".contactscroll").css(cssReset);
       $(".appscroll").css(cssReset);
     }
     if (wintop >= location2){
       $('.appscroll').css(css);
       $(".profscroll").css(cssReset);
-      $(".contactscroll").css(cssReset);
     }
     if (wintop >= location3){
-      $('.contactscroll').css(css);
       $(".profscroll").css(cssReset);
       $(".appscroll").css(cssReset);
     }
@@ -56,20 +51,12 @@ $(function(){
     $("html, body").animate({scrollTop:location2});
   });
 
-  $(".contactbtn").on("click", function(){
-    $("html, body").animate({scrollTop:location3});
-  });
-
   $(".profscroll").on("click", function(){
     $('html, body').animate({scrollTop:location});
   });
 
   $(".appscroll").on("click", function(){
     $("html, body").animate({scrollTop:location2});
-  })
-
-  $(".contactscroll").on("click", function(){
-    $("html, body").animate({scrollTop:location3});
   })
 
   $(".topscroll").on("click", function(){
